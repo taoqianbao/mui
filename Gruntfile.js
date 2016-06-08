@@ -2,6 +2,7 @@
  * Mui's Gruntfile
  */
 
+
 /* jshint node: true */
 module.exports = function(grunt) {
 	'use strict';
@@ -14,6 +15,7 @@ module.exports = function(grunt) {
 	};
 
 	var generateNamespace = require('./grunt/mui-namespace-generator.js');
+
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
@@ -29,7 +31,7 @@ module.exports = function(grunt) {
 
 		banner: '/*!\n' +
 			' * =====================================================\n' +
-			' * Mui v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+			' * YCK Mobile UI v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
 			' * =====================================================\n' +
 			' */\n',
 
@@ -239,12 +241,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('build', ['dist']);
 	grunt.registerTask('default', ['dist']);
 
-
 	grunt.registerTask('build-namespace', generateNamespace);
 
-	grunt.registerTask('server', ['dist','watch']);
-
-
+	grunt.registerTask('server', ['dist', 'watch']);
 
 	// Version numbering task.
 	// grunt change-version-number --oldver=A.B.C --newver=X.Y.Z

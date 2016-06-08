@@ -1002,7 +1002,8 @@
 				"resources": [
 					"css/app.css",
 					"css/mui.min.css",
-					"js/mui.js"
+					"js/mui.js",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0

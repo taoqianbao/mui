@@ -23,6 +23,7 @@
 			var menu = null,
 				main = null;
 			var showMenu = false;
+			
 			mui.init({
 				swipeBack: false,
 				statusBarBackground: '#f7f7f7',
@@ -39,7 +40,12 @@
 					}
 				}]
 			});
+			
+			//页面初始化
 			mui.plusReady(function() {
+				
+				console.log('mui.plusReady');
+				
 				//仅支持竖屏显示
 				plus.screen.lockOrientation("portrait-primary");
 				main = plus.webview.currentWebview();

@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 
 		banner: '/*!\n' +
 			' * =====================================================\n' +
-			' * Mui v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+			' * Mui.YCK v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
 			' * =====================================================\n' +
 			' */\n',
 

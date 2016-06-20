@@ -2944,7 +2944,8 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
 		var nativeSetHeader = xhr.setRequestHeader;
 		var abortTimeout;
 
-		setHeader('X-Requested-With', 'XMLHttpRequest');
+		//setHeader('X-Requested-With', 'XMLHttpRequest');
+		//remove above code for ajax cros by peter 20160620
 		setHeader('Accept', mime || '*/*');
 		if (!!(mime = settings.mimeType || mime)) {
 			if (mime.indexOf(',') > -1) {

@@ -38,7 +38,8 @@
 	$.waitingOptions = function(options) {
 		return $.extend(true, {}, {
 			autoShow: true,
-			title: ''
+			title: '',
+			modal:false
 		}, options);
 	};
 	/**
@@ -245,7 +246,9 @@
 				if (!url) {
 					showWebview();
 				} else {
-					webview.addEventListener("loaded", showWebview, false);
+					// webview.addEventListener("loaded", showWebview, false);
+					//titleUpdate触发时机早于loaded，更换为titleUpdate后，可以更早的显示webview
+					webview.addEventListener("titleUpdate", showWebview, false);
 				}
 			}
 		}

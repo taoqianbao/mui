@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 				dest: '<%= meta.distPath %>js/<%= pkg.name %>.js',
 			}
 		},
-
+		
 		sass: {
 			options: {
 				banner: '<%= banner %>',
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'<%= meta.distPath %>css/<%= pkg.name %>.css': 'sass/mui.scss',
+					'<%= meta.distPath %>css/<%= pkg.name %>.css': 'sass/mui.scss'
 				}
 			}
 		},

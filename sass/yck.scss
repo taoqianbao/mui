@@ -1,0 +1,202 @@
+html,
+body,
+.mui-content {
+    background-color: #f2f2f2;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.wrap {
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.none {
+    display: none!important;
+}
+
+.omit {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.orange {
+    color: #ff5000;
+}
+
+.green {
+    color: #008c46;
+}
+
+.red {
+    color: #d40000;
+}
+
+.gray {
+    color: #666;
+}
+
+.lgray {
+    color: #999;
+}
+
+
+/*
+ * fontSize
+ */
+
+.ft10 {
+    font-size: 10px;
+}
+
+.ft11 {
+    font-size: 11px;
+}
+
+.ft12 {
+    font-size: 12px;
+}
+
+.ft13 {
+    font-size: 13px;
+}
+
+.ft14 {
+    font-size: 14px;
+}
+
+.ft15 {
+    font-size: 15px;
+}
+
+.ft16 {
+    font-size: 16px;
+}
+
+
+/*
+ * font-weight
+ */
+
+.fwnormal {
+    font-weight: normal;
+}
+
+.fwlight {
+    font-weight: lighter;
+}
+
+.fwbold {
+    font-weight: bold;
+}
+
+.fwbolder {
+    font-weight: bolder;
+}
+
+.fw100 {
+    font-weight: 100;
+}
+
+.fw200 {
+    font-weight: 200;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400; //normal
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw700 {
+    font-weight: 700; //bold
+}
+
+.fw800 {
+    font-weight: 800;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+
+/*
+ * media query 
+ */
+
+@media (device-width:320px) {
+    /* iphone4, iphone5*/
+}
+
+@media (device-width:375px) and (-webkit-min-device-pixel-ratio:2) {
+    /* 兼容iphone 6 */
+    .class {}
+}
+
+@media (device-width:414px) and (-webkit-min-device-pixel-ratio:3.0) {
+    /* 兼容iphone6 plus */
+    .class {}
+}
+
+@media(min-device-width:375px)and(max-device-width:667px)and(-webkit-min-device-pixel-ratio:2) {
+    /*iphone6*/
+    .class {}
+}
+
+
+/*iphone6plus*/
+
+@media(min-device-width:414px)and(max-device-width:736px)and(-webkit-min-device-pixel-ratio:3) {
+    /*iphone6 plus*/
+    .class {}
+}
+
+
+/*高清显示屏(设备像素比例大于等于2)使用2倍图 */
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {}
+
+
+/*高清显示屏(设备像素比例大于等于3)使用3倍图 */
+
+@media only screen and (-webkit-min-device-pixel-ratio:3) {}

@@ -4,6 +4,7 @@
  * =====================================================
  */
 
+@charset 'UTF-8';
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html
 {
@@ -281,7 +282,7 @@ th
 
 body
 {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
     font-size: 17px;
     line-height: 21px;
 
@@ -2774,7 +2775,7 @@ input,
 textarea,
 select
 {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
     font-size: 17px;
 
     -webkit-tap-highlight-color: transparent;
@@ -2976,7 +2977,7 @@ select:focus
 
 .mui-input-row label
 {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
     line-height: 1.1;
 
     float: left;
@@ -2998,7 +2999,7 @@ select:focus
 
 .mui-input-row .mui-btn
 {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
     line-height: 1.1;
 
     float: right;
@@ -5548,5 +5549,228 @@ body > .mui-progressbar
 
     border: 0;
 }
+
+html,
+body,
+.mui-content
+{
+    background-color: #f2f2f2;
+}
+
+.clearfix:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '.';
+}
+
+[v-cloak]
+{
+    display: none;
+}
+
+*
+{
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select,
+textarea
+{
+    border: 0;
+    border-radius: 0;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+
+textarea:focus
+{
+    outline: 0;
+}
+
+.wrap
+{
+    position: relative;
+
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.none
+{
+    display: none !important;
+}
+
+.omit
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.orange
+{
+    color: #ff5000;
+}
+
+.green
+{
+    color: #008c46;
+}
+
+.red
+{
+    color: #d40000;
+}
+
+.gray
+{
+    color: #666;
+}
+
+.lgray
+{
+    color: #999;
+}
+
+/*
+ * fontSize
+ */
+.ft10
+{
+    font-size: 10px;
+}
+
+.ft11
+{
+    font-size: 11px;
+}
+
+.ft12
+{
+    font-size: 12px;
+}
+
+.ft13
+{
+    font-size: 13px;
+}
+
+.ft14
+{
+    font-size: 14px;
+}
+
+.ft15
+{
+    font-size: 15px;
+}
+
+.ft16
+{
+    font-size: 16px;
+}
+
+/*
+ * font-weight
+ */
+.fwnormal
+{
+    font-weight: normal;
+}
+
+.fwlight
+{
+    font-weight: lighter;
+}
+
+.fwbold
+{
+    font-weight: bold;
+}
+
+.fwbolder
+{
+    font-weight: bolder;
+}
+
+.fw100
+{
+    font-weight: 100;
+}
+
+.fw200
+{
+    font-weight: 200;
+}
+
+.fw300
+{
+    font-weight: 300;
+}
+
+.fw400
+{
+    font-weight: 400;
+}
+
+.fw500
+{
+    font-weight: 500;
+}
+
+.fw600
+{
+    font-weight: 600;
+}
+
+.fw700
+{
+    font-weight: 700;
+}
+
+.fw800
+{
+    font-weight: 800;
+}
+
+.fw900
+{
+    font-weight: 900;
+}
+
+/*
+ * media query 
+ */
+@media (device-width: 320px)
+{
+  /* iphone4, iphone5*/
+}
+@media (device-width: 375px) and (-webkit-min-device-pixel-ratio: 2)
+{
+  /* 兼容iphone 6 */
+}
+@media (device-width: 414px) and (-webkit-min-device-pixel-ratio: 3)
+{
+  /* 兼容iphone6 plus */
+}
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)
+{
+  /*iphone6*/
+}
+/*iphone6plus*/
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3)
+{
+  /*iphone6 plus*/
+}
+/*高清显示屏(设备像素比例大于等于2)使用2倍图 */
+/*高清显示屏(设备像素比例大于等于3)使用3倍图 */
 
 /*# sourceMappingURL=mui.css.map */

@@ -157,6 +157,7 @@
 				setHeader(name, settings.headers[name]);
 		}
 		xhr.setRequestHeader = setHeader;
+		//xhr.withCredentials = true;
 
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState === 4) {

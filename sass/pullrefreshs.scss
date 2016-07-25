@@ -1,39 +1,47 @@
-.#{$namespace}pull-top-pocket,.#{$namespace}pull-bottom-pocket{
+.#{$namespace}pull-top-pocket,
+.#{$namespace}pull-bottom-pocket {
     display: block;
     overflow: hidden;
     position: absolute;
     left: 0;
     width: 100%;
-    height: 50px;
-    visibility:hidden;
+    height: _px2rem(100px);
+    visibility: hidden;
 }
+
 //android 5+
-.#{$namespace}plus-pullrefresh{
-    .#{$namespace}pull-top-pocket,.#{$namespace}pull-bottom-pocket{
+.#{$namespace}plus-pullrefresh {
+    .#{$namespace}pull-top-pocket,
+    .#{$namespace}pull-bottom-pocket {
         display: none;
-        visibility:visible;
+        visibility: visible;
     }
 }
-.#{$namespace}pull-top-pocket{
-    top:0px;
+
+.#{$namespace}pull-top-pocket {
+    top: 0px;
 }
-.#{$namespace}bar-nav~.#{$namespace}content .#{$namespace}pull-top-pocket{
-    top: 44px;
+
+.#{$namespace}bar-nav~.#{$namespace}content .#{$namespace}pull-top-pocket {
+    top: _px2rem(88px);
 }
-.#{$namespace}bar-nav~.#{$namespace}bar-header-secondary~.#{$namespace}content .#{$namespace}pull-top-pocket{
-    top: 88px;
+
+.#{$namespace}bar-nav~.#{$namespace}bar-header-secondary~.#{$namespace}content .#{$namespace}pull-top-pocket {
+    top: _px2rem(176px);
 }
-.#{$namespace}pull-bottom-pocket{
-    bottom:0;
-    height: 40px;
-    position:relative;
-    .#{$namespace}pull-loading{
-        visibility:hidden;
-        &.#{$namespace}in{
+
+.#{$namespace}pull-bottom-pocket {
+    bottom: 0;
+    height: _px2rem(80px);
+    position: relative;
+    .#{$namespace}pull-loading {
+        visibility: hidden;
+        &.#{$namespace}in {
             display: inline-block;
         }
-    }   
+    }
 }
+
 //android 5+
 //.#{$namespace}plus-pullrefresh{
 //  .#{$namespace}pull-bottom-pocket{
@@ -47,10 +55,10 @@
 //      top:-445px;
 //  }
 //}
-.#{$namespace}pull{
+.#{$namespace}pull {
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: _px2rem(20px);
     right: 0;
     color: #777;
     text-align: center;
@@ -69,29 +77,31 @@
 //background-repeat:no-repeat;
 //vertical-align: middle;
 //}
-.#{$namespace}pull-loading{
-//  -webkit-backface-visibility: hidden;
+.#{$namespace}pull-loading {
+    //  -webkit-backface-visibility: hidden;
     -webkit-transition-duration: 400ms;
     transition-duration: 400ms;
-    -webkit-transition:-webkit-transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
     transition: transform 0.4s;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: _px2rem(20px);
 }
-.#{$namespace}pull-loading.#{$namespace}reverse{
+
+.#{$namespace}pull-loading.#{$namespace}reverse {
     @include transform(rotate(180deg) translateZ(0));
 }
-.#{$namespace}pull-caption{
+
+.#{$namespace}pull-caption {
     display: inline-block;
-    line-height: 24px;
-    font-size: 15px;
+    line-height: _px2rem(48px);
+    @include font-dpr(15px);
     margin-top: 0;
     vertical-align: middle;
     position: relative;
     overflow: visible;
-    span{
+    span {
         display: none;
-        &.#{$namespace}in{
+        &.#{$namespace}in {
             display: inline;
         }
     }

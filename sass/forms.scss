@@ -80,7 +80,7 @@ textarea {
 select {
     margin-top:1px;
     height: auto;
-    font-size: 14px;
+    font-size: _px2rem(28px);
     background-color: #fff;
     border: 0!important;
     &:focus{
@@ -124,8 +124,8 @@ select {
     overflow: hidden;
     select{
         padding: 0;
-        height: 37px;
-        font-size:17px;
+        height: _px2rem(74px);
+        font-size:_px2rem(34px);
     }
 }
 .#{$namespace}input-row:last-child,
@@ -134,7 +134,7 @@ select {
 }
 // To use labels with input groups, wrap a label and an input in an .#{$namespace}input-row
 .#{$namespace}input-group .#{$namespace}input-row {
-    height: 45px; // Matches the height of inputs.
+    height: _px2rem(90px); // Matches the height of inputs.
     @include hairline(single, #c8c7cc, 15px); // Single grey border with a 15px .
 }
 // Labels get floated left with a set percentage width
@@ -160,7 +160,7 @@ select {
 .#{$namespace}input-row .mui-btn {
     float: right;
     width: 15%;
-    padding: 10px 15px;
+    padding: _px2rem(20px) _px2rem(30px);
     font-family: $font-family-default;
     line-height: 1.1; // Put the text on the baseline.
 }
@@ -180,13 +180,13 @@ select {
     text-align: center;    
 }
 .#{$namespace}input-group .#{$namespace}button-row  {
-    height: 45px;
+    height: _px2rem(90px);
 }
 // Actual inputs float to right of labels and also have a set percentage
 .#{$namespace}input-row  {
     position:relative;
     &.#{$namespace}input-range{
-        padding-right: 20px;
+        padding-right: _px2rem(40px);
         overflow: visible;
     }
     .#{$namespace}inline{
@@ -195,10 +195,10 @@ select {
     .#{$namespace}input-clear ~ .#{$namespace}icon-clear,.#{$namespace}input-speech ~ .#{$namespace}icon-speech,.#{$namespace}input-password ~ .#{$namespace}icon-eye{
         position:absolute;
         right: 0px;
-        top: 10px;
-        font-size: 20px;
-        height: 38px;
-        width: 38px;
+        top: _px2rem(20px);
+        font-size: _px2rem(40px); 
+        height: _px2rem(76px);
+        width: _px2rem(76px);
         text-align: center;
         color:#999;
         z-index: z("default");
@@ -207,8 +207,8 @@ select {
         }
     }
     .#{$namespace}input-speech ~ .#{$namespace}icon-speech{
-        top:8px;
-        font-size:24px;
+        top:_px2rem(16px);
+        font-size:_px2rem(48px);
     }
     .#{$namespace}input-clear ~ .#{$namespace}icon-clear {
         ~ .#{$namespace}icon-speech{
@@ -221,14 +221,14 @@ select {
         }
     }
     .#{$namespace}icon-speech ~ .#{$namespace}placeholder{
-        right:38px;
+        right:_px2rem(76px);
     }
     &.#{$namespace}search{
         .#{$namespace}icon-clear{
-            top:7px;
+            top:_px2rem(14px);
         }
         .#{$namespace}icon-speech{
-            top:5px;
+            top:_px2rem(10px);
         }
     }
 }
@@ -240,27 +240,27 @@ select {
         float: none;
         display: inline-block;
         width: 100%;
-        padding-right: 58px;
+        padding-right: _px2rem(116px);
     }
 
 }
 .#{$namespace}radio.#{$namespace}left input[type="radio"],.#{$namespace}checkbox.#{$namespace}left input[type="checkbox"]{
-    left:20px;
+    left:_px2rem(40px);
 }
 .#{$namespace}radio.#{$namespace}left label,.#{$namespace}checkbox.#{$namespace}left label{
-    padding-left: 58px;
-    padding-right: 15px;
+    padding-left: _px2rem(116px);
+    padding-right: _px2rem(30px);
 }
 .#{$namespace}radio input[type="radio"],.#{$namespace}checkbox input[type="checkbox"]{
     -webkit-appearance:none;
     outline: 0!important;
-    width: 28px;
+    width: _px2rem(56px);
     border: 0;
-    height: 26px;
+    height: _px2rem(56px);
     display: inline-block;
     position: absolute;
-    right: 20px;
-    top: 4px;
+    right: _px2rem(40px);
+    top: _px2rem(8px);
     //设置背景色，否则在Ios上会有黑色边框；
     background-color:transparent;
     &[disabled]:before{
@@ -270,7 +270,7 @@ select {
         font-family: Muiicons;
         font-weight: normal;
         border-radius: 0;
-        font-size: 28px;
+        font-size: _px2rem(56px);
         line-height: 1;
         text-decoration: none;
         -webkit-font-smoothing: antialiased;

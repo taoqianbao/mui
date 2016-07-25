@@ -126,9 +126,9 @@ input[type="submit"],
 .#{$namespace}btn-block {
     display: block;
     width: 100%;
-    padding: 15px 0;
-    margin-bottom: 10px;
-    font-size: 18px;
+    padding: _px2rem(3px) 0;
+    margin-bottom: _px2rem(20px);
+    font-size: _px2rem(36px);
 }
 
 
@@ -197,7 +197,7 @@ input[type="submit"],
         padding:8px;
     }
     .#{$namespace}icon{
-        font-size: 24px;
+        @include font-dpr(24px);
         line-height: 24px;
         width: 24px;
         height: 24px;
